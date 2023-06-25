@@ -1,0 +1,121 @@
+* {
+  font-size: 1.3rem;
+}
+
+body {
+  background-color: rgb(15, 15, 99);
+  color: rgb(255, 255, 255);
+}
+
+main {
+  display: flex;
+  flex-direction: raw;
+  justify-content: space-around;
+  margin: 40px;
+}
+
+.information {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  /* border: 2px solid red; */
+  padding: 10px;
+}
+
+.resetButton1 {
+  all: unset;
+  border: 2px solid rgba(255, 255, 255, 0.558);
+  padding: 7px;
+  border-radius: 13px;
+  /* color: rgb(177, 66, 18); */
+  color: rgb(15, 15, 99);
+  /* background-color: rgba(255, 255, 255, 0.144); */
+  background-color: rgba(255, 255, 255);
+}
+
+p {
+  margin: 5px;
+}
+/* Result of game. */
+
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border: 2px solid rgb(15, 15, 99);
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  opacity: 1;
+}
+
+/* For the three section which make three raw. */
+.gameBoard {
+  display: block;
+}
+section {
+  display: flex;
+  flex-direction: row;
+}
+
+.box {
+  width: 17vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid green;
+  height: 27vh;
+  font-size: 5rem;
+}
+
+.border-top {
+  border-top: none;
+}
+
+.border-left {
+  border-left: none;
+}
+.border-right {
+  border-right: none;
+}
+.border-bottom {
+  border-bottom: none;
+}
+
+@media screen and (max-width: 800px) {
+  .information {
+    margin: 0;
+    height: auto;
+    font-size: 1.3rem;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .gameBoard {
+    display: block;
+    margin: 4rem auto 0rem auto;
+    width: 100%;
+  }
+
+  .box {
+    width: 100%;
+    font-size: 50px;
+    height: 10vh;
+  }
+
+  .result {
+    width: 85%;
+    flex-direction: column;
+  }
+}

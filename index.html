@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic tac toe Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="tic-tac-toe-logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <main class="board">
+      <div class="sidebar">
+        <div class="information">
+          <p>
+            Current player :
+            <span id="status"></span>
+          </p>
+          <p>Player-1 : X</p>
+          <p>Player-2 : 0</p>
+          <button class="resetButton1" onclick="reset()">Reset Game</button>
+        </div>
+      </div>
+      <div class="gameBoard">
+        <section class="row1">
+          <div id="0" class="box border-top border-left"><span></span></div>
+          <div id="1" class="box border-top"><span></span></div>
+          <div id="2" class="box border-top border-right"><span></span></div>
+        </section>
+        <section class="row2">
+          <div id="3" class="box border-left"><span></span></div>
+          <div id="4" class="box"><span></span></div>
+          <div id="5" class="box border-right"><span></span></div>
+        </section>
+        <section class="row3">
+          <div id="6" class="box border-left border-bottom"><span></span></div>
+          <div id="7" class="box border-bottom"><span></span></div>
+          <div id="8" class="box border-right border-bottom"><span></span></div>
+        </section>
+      </div>
+    </main>
+    <div id="result">
+      <p id="congratulation"></p>
+      <p id="winner"></p>
+    </div>
+    <script src="logic.js"></script>
+  </body>
+</html>
